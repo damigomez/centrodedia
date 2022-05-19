@@ -8,28 +8,28 @@
     <link rel="icon" href="resources/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Centro de día Munay Ki</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="resources/logo.png" alt="logo" class="header__logo">
+    <header class="container-fluid" 
+            class="row">
+        <div class="col-xl-2"> 
+                <img class="img-fluid" src="../resources/logo.png" alt="logo" class="header__logo" >
             </div>
-            <div>
-                <ul class="header__navegacion">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./institucional.html">Institucional</a></li>
-                    <li><a href="./centro-de-dia.html">Centro de día</a></li>
-                    <li><a href="./talleres.html">Talleres</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+        <nav class="col-xl-8"> 
+            <ul class="header__navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./institucional.html">Institucional</a></li>
+                <li><a href="./centro-de-dia.html">Centro de día</a></li>
+                <li><a href="./talleres.html">Talleres</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-            <div>
+            <div class="header__telefono" class="col-xl-2"> 
                 <i class="fa-solid fa-phone"></i><p>4235-5654</p>
-            </div>            
+            </div>        
     </header>
     <main>
         <section>
@@ -112,5 +112,6 @@
             <p>mail: centrodediamunayki@gmail.com</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

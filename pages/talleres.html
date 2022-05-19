@@ -8,28 +8,28 @@
     <link rel="icon" href="resources/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Centro de día Munay Ki</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="resources/logo.png" alt="logo" class="header__logo">
+    <header class="container-fluid" 
+            class="row">
+        <div class="col-xl-2"> 
+                <img class="img-fluid" src="../resources/logo.png" alt="logo" class="header__logo" >
             </div>
-            <div>
-                <ul class="header__navegacion">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./institucional.html">Institucional</a></li>
-                    <li><a href="./centro-de-dia.html">Centro de día</a></li>
-                    <li><a href="./talleres.html">Talleres</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+        <nav class="col-xl-8"> 
+            <ul class="header__navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./institucional.html">Institucional</a></li>
+                <li><a href="./centro-de-dia.html">Centro de día</a></li>
+                <li><a href="./talleres.html">Talleres</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-            <div>
+            <div class="header__telefono" class="col-xl-2"> 
                 <i class="fa-solid fa-phone"></i><p>4235-5654</p>
-            </div>            
+            </div>        
     </header>
     <main>
         <section>
@@ -41,46 +41,117 @@
                 jóvenes y/o adultos participan de los siguientes talleres anuales.
             </p>
         </section>
-        <section>
-            <!-- acordeon -->
-            <h2>Habilidades Académicas</h2>
-            <p>
-                La puesta en marcha de este proyecto tiene como meta asegurar, alentar, completar y complejizar aquellos conocimientos académicos que han sido adquiridos fuera del Centro de Día.
-                La revalorización y el desarrollo de saberes permitirán incrementar su independencia.
-                Uno de sus objetivos es, por ejemplo, favorecer las funciones ejecutivas como atención, memoria, planificación de la tarea.
-            </p>
-            <h2>Arte y Oficio del Jardinero</h2>
-            <p>
-                Esta propuesta tiene la finalidad de trabajar con elementos de la naturaleza, que permitirá al/la joven un dominio conceptual e instrumental de: Materiales, Insumos y Herramientas a través de actividades específicas de jardinería que implicarán reforzar, intensificar, potenciar habilidades manuales de coordinación viso-motora, de comunicación, de socialización, como así también aquellas relacionadas con las funciones ejecutivas, como por ejemplo, atención, planificación y seguimiento de pasos entre otros.
-                Uno de sus objetivos es, por ejemplo, estimular habilidades motoras (Cortar, Regar, Transplantar, etc.).
-            </p>
-            <h2>Ejercitación Física</h2>
-            <p>
-                El cuerpo es la base de aprendizaje de cualquier tipo de actividad que sea motora, sea cual fuere la condición del/la joven. En Ejercitación Física, aprenden y se desarrollan en el movimiento y la acción. Por lo tanto, la actividad física y el juego motor, son recursos fundamentales para un desarrollo saludable. Hacer ejercicio físico es importante para mantenerse en buen estado de salud, evitar la obesidad, favorecer una mayor autonomía personal, adquirir una adecuada evolución motriz y, sobre todo, favorecer la socialización.
-                Uno de sus objetivos es, por ejemplo, incrementar la fuerza general.
-            </p>
-            <h2>Habilidades Sociales</h2>
-            <p>
-                Este proyecto tiene como fin afianzar, practicar e implementar el uso de buenas costumbres, para reforzar y regular el comportamiento adecuado de las personas y así garantizarnos, la construcción de vínculos más duradero, respetuosos, para una mejor convivencia en el Centro de Día, en el hogar y en la comunidad de nuestros concurrentes.
-                Uno de sus objetivos es, por ejemplo, realizar tareas de rutina.
-            </p>
-            <h2>Producción Artesanal</h2>
-            <p>
-                En la ejecución de este proyecto se desarrollarán actividades para reforzar, implementar, estimular, desarrollar y potenciar habilidades manuales, de coordinación viso-motoras, de comunicación, socialización, como así también aquellas relacionadas con las funciones ejecutivas, como por ejemplo atención, planificación y seguimiento de paso entre otros.
-                Uno de sus objetivos es, por ejemplo, realizar una tarea de principio a fin.
-            </p>
-            <h2>Tareas Hogareñas</h2>
-            <p>
-                El proyecto tendrá como finalidad que el/la joven logre realizar actividades funcionales para su vida cotidiana y lograr de este modo una mayor colaboración en el núcleo familiar, poniendo en práctica las habilidades que se trabajarán en el taller. Así como también fomentar la comunicación y los roles dentro del hogar.
-                Uno de sus objetivos es, por ejemplo, desarrollar hábitos y habilidades domésticas que permitan al joven una mayor autonomía para satisfacer sus necesidades básicas.
-            </p>
-            <h2>Tejido y Costura</h2>
-            <p>
-                Este taller propone que el/la concurrente aborde diferentes técnicas manuales e instrumentales de tejido y costura de acuerdo a su proceso evolutivo y en el experimentar a través de los sentidos.
-                Uno de sus objetivos es, por ejemplo, integrar y participar en forma cooperativa, solidaria en grupos de trabajo o rueda de trabajo.
-            </p>
+        <section class="container acordeon">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Habilidades Académicas
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                La puesta en marcha de este proyecto tiene como meta asegurar, alentar, completar y complejizar aquellos conocimientos académicos que han sido adquiridos fuera del Centro de Día.
+                                La revalorización y el desarrollo de saberes permitirán incrementar su independencia.
+                                Uno de sus objetivos es, por ejemplo, favorecer las funciones ejecutivas como atención, memoria, planificación de la tarea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Arte y Oficio del Jardinero
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Esta propuesta tiene la finalidad de trabajar con elementos de la naturaleza, que permitirá al/la joven un dominio conceptual e instrumental de: Materiales, Insumos y Herramientas a través de actividades específicas de jardinería que implicarán reforzar, intensificar, potenciar habilidades manuales de coordinación viso-motora, de comunicación, de socialización, como así también aquellas relacionadas con las funciones ejecutivas, como por ejemplo, atención, planificación y seguimiento de pasos entre otros.
+                                Uno de sus objetivos es, por ejemplo, estimular habilidades motoras (Cortar, Regar, Transplantar, etc.).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Ejercitación Física
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                El cuerpo es la base de aprendizaje de cualquier tipo de actividad que sea motora, sea cual fuere la condición del/la joven. En Ejercitación Física, aprenden y se desarrollan en el movimiento y la acción. Por lo tanto, la actividad física y el juego motor, son recursos fundamentales para un desarrollo saludable. Hacer ejercicio físico es importante para mantenerse en buen estado de salud, evitar la obesidad, favorecer una mayor autonomía personal, adquirir una adecuada evolución motriz y, sobre todo, favorecer la socialización.
+                                Uno de sus objetivos es, por ejemplo, incrementar la fuerza general.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Habilidades Sociales
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Este proyecto tiene como fin afianzar, practicar e implementar el uso de buenas costumbres, para reforzar y regular el comportamiento adecuado de las personas y así garantizarnos, la construcción de vínculos más duradero, respetuosos, para una mejor convivencia en el Centro de Día, en el hogar y en la comunidad de nuestros concurrentes.
+                                Uno de sus objetivos es, por ejemplo, realizar tareas de rutina.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Producción Artesanal
+                    </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                En la ejecución de este proyecto se desarrollarán actividades para reforzar, implementar, estimular, desarrollar y potenciar habilidades manuales, de coordinación viso-motoras, de comunicación, socialización, como así también aquellas relacionadas con las funciones ejecutivas, como por ejemplo atención, planificación y seguimiento de paso entre otros.
+                                Uno de sus objetivos es, por ejemplo, realizar una tarea de principio a fin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Tareas Hogareñas
+                    </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                El proyecto tendrá como finalidad que el/la joven logre realizar actividades funcionales para su vida cotidiana y lograr de este modo una mayor colaboración en el núcleo familiar, poniendo en práctica las habilidades que se trabajarán en el taller. Así como también fomentar la comunicación y los roles dentro del hogar.
+                                Uno de sus objetivos es, por ejemplo, desarrollar hábitos y habilidades domésticas que permitan al joven una mayor autonomía para satisfacer sus necesidades básicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Tejido y Costura
+                    </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Este taller propone que el/la concurrente aborde diferentes técnicas manuales e instrumentales de tejido y costura de acuerdo a su proceso evolutivo y en el experimentar a través de los sentidos.
+                                Uno de sus objetivos es, por ejemplo, integrar y participar en forma cooperativa, solidaria en grupos de trabajo o rueda de trabajo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="grid__talleres"> <!-- modificar imágenes / es para probar template area -->
+        <section class="container grid__talleres"> <!-- modificar imágenes / es para probar template area -->
             <div class="grid__item grid__uno"></div>
             <div class="grid__item grid__dos"></div>
             <div class="grid__item grid__tres"></div>
@@ -110,5 +181,6 @@
             <p>mail: centrodediamunayki@gmail.com</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
