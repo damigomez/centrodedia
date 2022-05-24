@@ -3,6 +3,10 @@
     margin: 0%;
 }
 
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 .nombre {
     width: 200;
     height: auto;
@@ -18,20 +22,21 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #c6e1f1; 
+    background-color: #f5f5f5; 
     font-family: 'Nunito Sans', sans-serif;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-right: 5rem;
+    padding-left: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin: 0%;
     max-width: 100%;
-        
+    
 }
 
 .header__navegacion {
     list-style-type: none;
-    justify-content: flex-end
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -40,23 +45,51 @@ li {
 }
 
 .header__logo {
-    max-width: 50px;
-    max-height: 50px;
-
+    margin-left: 3rem;
+    animation: fadein 2s;
+    
+    
 }
 
 
 .header__telefono {
     display: flex;
-    color: green;
+    color: #2d9c49;
+    gap: 1rem;
     }
 
 
 li a {
     padding: 10px;
     text-decoration: none;
-    color: green;
+    color: #2d9c49;
+    
+    
 }
+
+/* a:link {  
+    color: red;  
+    text-decoration: none;}  
+a:visited {  
+    color: gray;  
+    text-decoration: none;}  */ 
+a:active {  
+    text-decoration: none  
+    }  
+
+a:hover {  
+    color: #2d9c49;  
+    font-size: 18px;
+    
+    font-weight: 700;
+    
+}  
+
+.icono__telefono {
+    size: 1cm;
+}
+
+    
 .portada {
     display: flex;
     flex-wrap: wrap;
