@@ -14,12 +14,12 @@
     <title>Centro de día Munay Ki</title>
 </head>
 <body> <!-- aplico bootstrap al header -->
-    <header class="container-fluid" 
+    <header class="container-fluid sticky-top" 
             class="row"> <!-- declaro container y todo el menú en una fila -->
         <div class="col-xl-3"> <!-- declaro las columnas  -->
                 <img class="img-fluid head header__logo" src="resources/Logo MK-01.png" alt="logo" >
-            </div>
-        <nav class="col-xl-7"> <!-- declaro las columnas  -->
+        </div>
+        <!-- <nav class="col-xl-7"> 
             <ul class="header__navegacion">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pages/institucional.html">Institucional</a></li>
@@ -27,10 +27,24 @@
                 <li><a href="pages/talleres.html">Talleres</a></li>
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
+        </nav> -->
+        <nav class="col-xl-7 navbar navbar-expand-lg header__navegacion">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-center collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/institucional.html">Institucional</a></li>
+                    <li><a href="pages/centro-de-dia.html">Centro de día</a></li>
+                    <li><a href="pages/talleres.html">Talleres</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-            <div class="header__telefono" class="col-xl-2"> <!-- declaro las columnas  -->
-                <i class="fa-solid fa-phone icono__telefono"></i><p>4235-5654</p>
-            </div>   
+        <div class="header__telefono" class="col-xl-2"> <!-- declaro las columnas  -->
+            <i class="fa-solid fa-phone icono__telefono"></i><p>4235-5654</p>
+        </div>   
             <!-- cuando declaro los container se achica el ancho del contenido -->         
     </header>
     <main>
@@ -149,25 +163,23 @@
         </section>
     </main>
     <footer>
-        <nav>
-            <div>
-                <img class="footer__logo" src="resources/Logo MK-01.png" alt="logo">
-            </div>
-            <div class="footer__navegacion">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/institucional.html">Institucional</a></li>
-                    <li><a href="pages/centro-de-dia.html">Centro de día</a></li>
-                    <li><a href="pages/talleres.html">Talleres</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+        <nav class="col-xl-4"> <!-- declaro las columnas  -->
+            <ul class="footer__navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/institucional.html">Institucional</a></li>
+                <li><a href="pages/centro-de-dia.html">Centro de día</a></li>
+                <li><a href="pages/talleres.html">Talleres</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-        <div class="footer__datos">
+        <div class="col-xl-4 footer__datos">
             <p>Calle 27 n°4275, Berazategui, Buenos Aires.</p>
             <p>Horarios de atención de 9 a 18 hs.</p>
             <p>tel: 4235-5654</p>
             <p>mail: centrodediamunayki@gmail.com</p>
+        </div>
+        <div class="col-xl-4"> <!-- declaro las columnas  -->
+            <img class="img-fluid head header__logo" src="resources/Logo MK-01.png" alt="logo" >
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
