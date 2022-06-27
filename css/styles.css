@@ -196,21 +196,20 @@ a:hover {
     padding-top: 2rem;
     padding-bottom: 5rem;
     font-family: 'Nunito Sans', sans-serif;
+    color: 050505;
     text-align: center;
-    font-size: x-large;
+    font-size: 30px;
     
 }
 
 .iconos {
     display: flex;
     justify-content: center;
-    background-color: #c6e1f1;
-    color: #000;
+    background-color: #2d9c49;
+    color: #fff;
     margin: 0%;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     }
 
 .iconos__caja {
@@ -228,15 +227,18 @@ a:hover {
     
 }
 .iconos__titulos {
+    font-weight: 600;
     font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
     line-height: 5px;
     
 }
 
 .iconos__descripcion {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 14px;
-    color: black;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
     
 
 }
@@ -282,52 +284,72 @@ a:hover {
     margin-left: 2rem;
 }
 
+.institucional__titulo {
+    color: #2d9c49;
+    font-weight: 600;
+    font-size: 24px
+
+}
+
 .talleres__imagen {
     max-width: 35rem;
     max-height: 25rem;
     margin-right: 2rem;
 }
 
+.institucional__texto {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px
+    ;
+}
+
+.talleres__index {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 2rem;
+
+}
+
 .talleres__texto {
+    margin-left: 2rem;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 18px
     ;
 }
 
 .talleres__titulo {
+    color: #2d9c49;
+    font-weight: 600;
     margin-left: 2rem;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px
-
+    font-size: 24px
+    
 
 }
 
-.talleres__lista {
-    display: block;
-    margin-left: 2rem;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px
-
-}
 
 .boton {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif
 
 }
 
 .boton__talleres {
     margin-left: 2rem;
+    
 }
 
 .publico {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    background-color: #c6e1f1;
+    background-color: #2d9c49;
+    color: #fff;
     padding-top: 5rem;
     padding-bottom: 5rem;
     padding-left: 10rem;
     padding-right: 10rem;
     text-align: center;
+}
+
+.publico__titulo {
+    font-weight: 600;
 }
 
 
