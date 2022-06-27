@@ -39,6 +39,10 @@ header {
     justify-content: center;
 }
 
+.header__nav {
+    color: #2d9c49;
+}
+
 
 li {
     display: inline;
@@ -327,12 +331,37 @@ a:hover {
 
 
 .boton {
+    background-color: #2d9c49;
+    color: #fff;
     font-family: 'Nunito Sans', sans-serif
 
 }
 
+button a {
+    background-color: #2d9c49;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+button a:hover {
+    background-color: #fe1616;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+a:active {  
+    text-decoration: none  
+    }
+
+
+
 .boton__talleres {
     margin-left: 2rem;
+    background-color: #2d9c49;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif
     
 }
 
@@ -367,7 +396,8 @@ a:hover {
 
 .contacto__titulo {
     font-size: xx-large;
-    font-weight: bold;
+    color: #2d9c49;
+    font-weight: 600;
     
 }
 
@@ -389,11 +419,11 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     font-family: 'Nunito Sans', sans-serif;
-    background-color: #fe1616;
+    background-color: #2d9c49;
     padding-right: 50px;
     padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin: 0%;
 }
 
@@ -409,14 +439,33 @@ footer {
 
 }
 
-ul li a {
-    display: block;
+.footer__nav {
+    color: #fff;
 }
 
 
+/* ul li a {
+    display: block;
+    color: #fff;
+}
+
+ul li a:hover {
+    color: #fff;
+} */
+
+ol li a {
+    display: block;
+    color: #fff;
+    line-height: 0.5rem;
+}
+
+ol li a:hover {
+    color: #fff;
+}
 
 .footer__datos {
     line-height: 5px;
+    color: #fff;
     
 }
 
