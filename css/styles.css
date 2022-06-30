@@ -365,6 +365,68 @@ a:active {
     
 }
 
+.insitucional_seccion {
+    max-width: 35rem;
+    max-height: 20rem;
+}
+
+.institucion__cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-right: 8rem;
+    padding-left: 6rem;
+    padding-bottom: 100px;
+    margin: 0%;
+}
+.institucional__imagen {
+    max-width: 32rem;
+    max-height: 64rem;
+}
+
+.banner {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #2d9c49;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: center;
+}
+
+.centro__seccion {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: 050505;
+    text-align: center;
+    font-size: 30px;
+}
+
+.centro__descripcion {
+    color: #575756;
+    font-size: 26px;
+}
+
+.talleres__seccion {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.talleres__descripcion {
+    color: #575756;
+    font-size: 26px;
+}
+
 .publico {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
@@ -380,6 +442,8 @@ a:active {
 .publico__titulo {
     font-weight: 600;
 }
+
+
 
 
 
@@ -410,6 +474,12 @@ a:active {
     font-size: 20px;
     
 
+}
+
+.contacto__seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -468,6 +538,49 @@ ol li a:hover {
     color: #fff;
     
 }
+
+.contacto__encabezado {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: #2d9c49;
+
+}
+
+.centro__titulo {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: #2d9c49;
+}
+
+.institucional__encabezado {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        color: #2d9c49;
+    }
+
+.talleres__encabezado {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        color: #2d9c49;
+}
+
+
 
 .grid__container {
     display: grid;
@@ -613,6 +726,10 @@ ol li a:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
     
+}
+
+.formulario__index {
+    line-height: 50%;
 }
 
 .formulario__contacto {
