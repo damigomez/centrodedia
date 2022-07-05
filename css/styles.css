@@ -412,20 +412,50 @@ a:active {
     text-align: center;
 }
 
+.banner__titulo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.banner__texto {
+    font-size: 20px;
+}
+
+/* .centro {
+    display: flex;
+
+} */
+
 .centro__seccion {
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     font-family: 'Nunito Sans', sans-serif;
-    color: 050505;
     text-align: center;
-    font-size: 30px;
 }
 
 .centro__descripcion {
     color: #575756;
-    font-size: 26px;
+    font-size: 24px;
+}
+
+.centro__proceso {
+    display: flex;
+    align-items: center;
+    background-color: #2d9c49;
+}
+
+.proceso__lista {
+    display: flex;
+    text-align: center;
+}
+
+.proceso__titulo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    align-items: center;
 }
 
 .talleres__seccion {
@@ -574,6 +604,10 @@ ol li a:hover {
     padding-top: 5rem;
     padding-bottom: 2rem;
     color: #2d9c49;
+}
+
+.proceso__items {
+    display: block;
 }
 
 .institucional__encabezado {
